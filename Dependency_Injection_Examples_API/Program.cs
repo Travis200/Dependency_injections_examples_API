@@ -9,7 +9,7 @@ MilkshakeMachine milkshakeMachine = new MilkshakeMachine();
 
 app.MapGet("/", () => "Hello and welcome to the dependency injection cafe! We serve all " +
 "sorts of coffees and milkshakes can make each one in three different ways (constructor injection, " +
-"method Injection and property injection). Each of the drink is injected by 'hand'. The dependency " +
+"method injection and property injection). Each of the drink is injected by 'hand'. The dependency " +
 "injection container is not used in these examples so we can focus and understand the fundamentals of " +
 "dependency injection first. \n\n" +
 "All of the drinks can be ordered using get requests.\n" +
