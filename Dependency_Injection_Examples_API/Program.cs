@@ -23,24 +23,28 @@ app.MapGet("/", () => "Hello and welcome to the dependency injection cafe! We se
 "classes for the Cafe Worker (one that uses the coffee machine and one that uses the milkshake machine).");
 
 app.MapGet("/coffee/without_dependency_injection", (string drinkFlavour) => {
+    // Coffee - without dependency injection
     CafeWorkerWithoutInjection barista = new CafeWorkerWithoutInjection();
     string coffee = barista.ServeDrink(drinkFlavour);
     return coffee;
 });
 
 app.MapGet("/coffee/constructor_injection", (string drinkFlavour) => {
+    // Coffee - constructor injection
     CafeWorkerCtorInjection barista = new CafeWorkerCtorInjection(coffeeMachine);
     string coffee = barista.ServeDrink(drinkFlavour);
     return coffee;
 });
 
 app.MapGet("/coffee/method_injection", (string drinkFlavour) => {
+    // Coffee - method injection
     CafeWorkerMethodInjection barista = new CafeWorkerMethodInjection();
     string coffee = barista.ServeDrink(coffeeMachine, drinkFlavour);
     return coffee;
 });
 
 app.MapGet("/coffee/property_injection", (string drinkFlavour) => {
+    // Coffee - property injection
     CafeWorkerPropertyInjection barista = new CafeWorkerPropertyInjection();
     barista.DrinkMachine = coffeeMachine;
     string coffee = barista.ServeDrink(drinkFlavour);
@@ -48,18 +52,21 @@ app.MapGet("/coffee/property_injection", (string drinkFlavour) => {
 });
 
 app.MapGet("/milkshake/constructor_injection", (string drinkFlavour) => {
+    // Milkshake - constructor injection
     CafeWorkerCtorInjection milkshakeMachineOperator = new CafeWorkerCtorInjection(milkshakeMachine);
     string milkshake = milkshakeMachineOperator.ServeDrink(drinkFlavour);
     return milkshake;
 });
 
 app.MapGet("/milkshake/method_injection", (string drinkFlavour) => {
+    // Milkshake - method injection
     CafeWorkerMethodInjection milkshakeMachineOperator = new CafeWorkerMethodInjection();
     string milkshake = milkshakeMachineOperator.ServeDrink(milkshakeMachine, drinkFlavour);
     return milkshake;
 });
 
 app.MapGet("/milkshake/property_injection", (string drinkFlavour) => {
+    // Milkshake - property injection
     CafeWorkerPropertyInjection milkshakeMachineOperator = new CafeWorkerPropertyInjection();
     milkshakeMachineOperator.DrinkMachine = milkshakeMachine;
     string milkshake = milkshakeMachineOperator.ServeDrink(drinkFlavour);
