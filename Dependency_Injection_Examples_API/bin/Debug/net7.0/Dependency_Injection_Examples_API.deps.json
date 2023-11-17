@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Dependency_Injection_Examples_API/1.0.0": {
+        "runtime": {
+          "Dependency_Injection_Examples_API.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dependency_Injection_Examples_API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
