@@ -17,7 +17,7 @@ Hello and welcome to the dependency injection cafe! We serve all sorts of coffee
 **method injection** and **property injection**). Each of the drink is injected by 'hand'. The dependency injection container is not used in these examples so we can 
 focus and understand the fundamentals of dependency injection first.
 
-All of the drinks can be ordered using get requests.  
+All of the drinks can be ordered using **GET** requests.  
 To get a response first specify route as: ```{localhost base URL}/{drink type}/{dependency injection type}?drinkFlavour={drink flavour}```.  
 The available drink trypes are: **'coffee'** and **'milkshake'**.  
 The available injection types are: **'method_injection'**, **'property_injection'** and **'constructor_injection'**.   

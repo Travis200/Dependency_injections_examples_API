@@ -12,7 +12,7 @@ app.MapGet("/", () => "Hello and welcome to the dependency injection cafe! We se
 "method injection and property injection). Each of the drink is injected by 'hand'. The dependency " +
 "injection container is not used in these examples so we can focus and understand the fundamentals of " +
 "dependency injection first. \n\n" +
-"All of the drinks can be ordered using get requests.\n" +
+"All of the drinks can be ordered using GET requests.\n" +
 "To get a response first specify route as: '{localhost base URL}/{drink type}/{dependency injection type}?drinkFlavour={drink flavour}'. \n" +
 "The available drink trypes are: 'coffee' and 'milkshake'. \n" +
 "The available injection types are: 'method_injection', 'property_injection' and 'constructor_injection'. \n" +

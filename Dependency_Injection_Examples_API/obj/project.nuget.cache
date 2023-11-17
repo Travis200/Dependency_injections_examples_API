@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9eaRUhqRgyLMzG6yGiSPv37JTWEpkwNuEu9138lmTKchVY/UDc6vKvdm+oBl9AVJbL5Ta0GIPXrQwa5NrPoMDw==",
+  "dgSpecHash": "HRgncxHSWQVJLfmQ5VvluUPRy3bVYhnBOmK2Dz+CivgcbYq8Rzn66u/FhujGLnm3wopwwMIejr8L9/FBk21zNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API.csproj",
+  "projectFilePath": "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\dependency_injection_examples_API\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

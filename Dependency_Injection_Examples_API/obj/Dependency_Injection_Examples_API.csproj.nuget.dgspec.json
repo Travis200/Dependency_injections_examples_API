@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API.csproj": {}
+    "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\dependency_injection_examples_API\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API.csproj": {
+    "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\dependency_injection_examples_API\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API.csproj",
+        "projectUniqueName": "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\dependency_injection_examples_API\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API.csproj",
         "projectName": "Dependency_Injection_Examples_API",
-        "projectPath": "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API.csproj",
+        "projectPath": "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\dependency_injection_examples_API\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API.csproj",
         "packagesPath": "C:\\Users\\t.higgins\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\t.higgins\\Desktop\\Projects\\Practice_Projects\\Dependency_Injection_Examples_API\\Dependency_Injection_Examples_API\\obj\\",
         "projectStyle": "PackageReference",
