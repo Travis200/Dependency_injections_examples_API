@@ -5,7 +5,12 @@
 I created this project to demonstrate the three main methods of performing dependency injection "by hand". This is an application that
 mocks a real life Cafe and orders drinks for the user. This application demonstrates how the cafe application could be implemented 
 with **constructor injection**, **method injection** and **property injection**. The original project was a console app. This project 
-adapts the original into a Minimal API using ASP.NET Core. 
+adapts the original into a Minimal API using ASP.NET Core.
+
+## How to Run
+1. Ensure .NET 7.0 is installed locally.
+2. Either use the Microsoft Visual Studio GUI to run this project or run the command ```dotnet run``` in the same directory as the csproj file.
+3. GET Requests can be made through a web browser or Postman etc on localhost.
 
 ## Dependency Injection Cafe Introduction
 Hello and welcome to the dependency injection cafe! We serve all sorts of coffees and milkshakes can make each one in three different ways (**constructor injection**, 
