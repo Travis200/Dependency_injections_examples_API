@@ -16,7 +16,17 @@ app.MapGet("/", () => "Hello and welcome to the dependency injection cafe! We se
 "To get a response first specify route as: '{localhost base URL}/{drink type}/{dependency injection type}?drinkFlavour={drink flavour}'. \n" +
 "The available drink trypes are: 'coffee' and 'milkshake'. \n" +
 "The available injection types are: 'method_injection', 'property_injection' and 'constructor_injection'. \n" +
-"For example: If you wanted to get a latte using constructor injection you would use the route '{localhost base URL}/coffee/constructor_injection?drinkFlavour=latte'.");
+"For example: If you wanted to get a latte using constructor injection you would use the route '{localhost base URL}/coffee/constructor_injection?drinkFlavour=latte'.\n" +
+"There is also a route that does not use dependency injection. The route is '{localhost base URL}/coffee/without_dependency_injection?drinkFlavour={drink flavour}'\n" +
+"This route is only available for coffee and not milkshakes. This is because the coffee machine class is tightly couples to the CafeWorkerWithoutInjection class\n" +
+"and is a good example of why dependency injection is important! If we dont use dependency injection we cannot use the Milkshake Machine without having two seperate\n" +
+"classes for the Cafe Worker (one that uses the coffee machine and one that uses the milkshake machine).");
+
+app.MapGet("/coffee/without_dependency_injection", (string drinkFlavour) => {
+    CafeWorkerWithoutInjection barista = new CafeWorkerWithoutInjection();
+    string coffee = barista.ServeDrink(drinkFlavour);
+    return coffee;
+});
 
 app.MapGet("/coffee/constructor_injection", (string drinkFlavour) => {
     CafeWorkerCtorInjection barista = new CafeWorkerCtorInjection(coffeeMachine);

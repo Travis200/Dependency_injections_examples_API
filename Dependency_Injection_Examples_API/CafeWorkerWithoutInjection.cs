@@ -7,7 +7,6 @@
         {
             this._coffeeMachine = new CoffeeMachine();
         }
-
         public string ServeDrink(string drink)
         {
             string pouredDrink = this._coffeeMachine.PourDrink(drink);
